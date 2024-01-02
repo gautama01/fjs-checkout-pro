@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const projectPath = 'fjs-checkout-pro'; // Cambia esto según la ruta de tu proyecto
+const projectPath = 'fjs-checkout-pro';
 
 // Estructura de carpetas y archivos
 const structure = {
@@ -28,7 +28,7 @@ const structure = {
   readme: 'README.md',
 };
 
-// Función para crear carpetas y archivos
+// Crear carpetas y archivos
 function createDirectoriesAndFiles(basePath, structure) {
   // Crear directorio principal si no existe
   if (!fs.existsSync(basePath)) {
